@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="http://code.jquery.com/jquery-3.6.3.min.js"
+      integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU="
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./scss/index.css" />
+    <title>Drum Machine</title>
+  </head>
+  <body>
+    <main>
+      <article id="drum-machine">
+        <div id="display">
+          <p id="display-text"></p>
+        </div>
+        <section id="pads">
+          <div class="drum-pad q" id="heater-1">
+            <p>Q</p>
+            <audio
+              src="https://s3.amazonaws.com/freecodecamp/drums/Heater-1.mp3"
+              type="audio/mpeg"
+              class="clip"
+              id="Q"
+            ></audio>
+          </div>
+          <div class="drum-pad w" id="heater-2">
+            <p>W</p>
+            <audio
+              src="https://s3.amazonaws.com/freecodecamp/drums/Heater-2.mp3"
+              type="audio/mpeg"
+              class="clip"
+              id="W"
+            ></audio>
+          </div>
+          <div class="drum-pad e" id="heater-3">
+            <p>E</p>
+            <audio
+              src="https://s3.amazonaws.com/freecodecamp/drums/Heater-3.mp3"
+              type="audio/mpeg"
+              class="clip"
+              id="E"
+            ></audio>
+          </div>
+          <div class="drum-pad a" id="heater-4">
+            <p>A</p>
+            <audio
+              src="https://s3.amazonaws.com/freecodecamp/drums/Heater-4_1.mp3"
+              type="audio/mpeg"
+              class="clip"
+              id="A"
+            ></audio>
+          </div>
+          <div class="drum-pad s" id="clap">
+            <p>S</p>
+            <audio
+              src="https://s3.amazonaws.com/freecodecamp/drums/Heater-6.mp3"
+              type="audio/mpeg"
+              class="clip"
+              id="S"
+            ></audio>
+          </div>
+          <div class="drum-pad d" id="open-hh">
+            <p>D</p>
+            <audio
+              src="https://s3.amazonaws.com/freecodecamp/drums/Dsc_Oh.mp3"
+              type="audio/mpeg"
+              class="clip"
+              id="D"
+            ></audio>
+          </div>
+          <div class="drum-pad z" id="kick-n'-hat">
+            <p>Z</p>
+            <audio
+              src="https://s3.amazonaws.com/freecodecamp/drums/Kick_n_Hat.mp3"
+              type="audio/mpeg"
+              class="clip"
+              id="Z"
+            ></audio>
+          </div>
+          <div class="drum-pad x" id="kick">
+            <p>X</p>
+            <audio
+              src="https://s3.amazonaws.com/freecodecamp/drums/RP4_KICK_1.mp3"
+              type="audio/mpeg"
+              class="clip"
+              id="X"
+            ></audio>
+          </div>
+          <div class="drum-pad c" id="closed-hh">
+            <p>C</p>
+            <audio
+              src="https://s3.amazonaws.com/freecodecamp/drums/Cev_H2.mp3"
+              type="audio/mpeg"
+              class="clip"
+              id="C"
+            ></audio>
+          </div>
+        </section>
+        <p id="misc">
+          &copy; Shayan Ali (SA9102). Created for freeCodeCamp.<br /><br /><a
+            href="https://github.com/SA9102/FCC-Drum-Machine" target="_blank"
+            >View repository</a
+          >
+        </p>
+      </article>
+    </main>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    <script src="./js/index.js"></script>
+  </body>
+</html>

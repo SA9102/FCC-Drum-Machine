@@ -1,0 +1,215 @@
+@import "./variables";
+
+* {
+  box-sizing: border-box;
+  font-family: roboto, sans-serif;
+}
+
+html {
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    137deg,
+    rgba(0, 0, 0, 1) 58%,
+    rgba(50, 0, 0, 1) 100%
+  );
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+#drum-machine {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  @media (max-height: 565px) {
+    gap: 1.5rem;
+  }
+}
+
+#pads {
+  width: 20rem;
+  height: 20rem;
+  display: grid;
+  grid-template-columns: 30% 30% 30%;
+  grid-template-rows: 30% 30% 30%;
+  gap: 1rem;
+  @media (max-height: 565px) {
+    width: 15rem;
+    height: 15rem;
+    gap: 0.7rem;
+  }
+  @media (max-width: 545px) {
+    width: 15rem;
+    height: 15rem;
+    gap: 0.7rem;
+  }
+}
+
+.drum-pad {
+  border-radius: 0.7rem;
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @media (max-height: 565px) {
+    font-size: 1.5rem;
+  }
+  @media (max-width: 545px) {
+    font-size: 1.5rem;
+  }
+}
+
+.q {
+  background-color: $pad-colour-1;
+  color: darken($pad-colour-1, 25%);
+  text-shadow: 0px 0px 25px black;
+}
+
+.w {
+  background-color: $pad-colour-2;
+  color: darken($pad-colour-2, 25%);
+  text-shadow: 0px 0px 25px black;
+}
+
+.e {
+  background-color: $pad-colour-3;
+  color: darken($pad-colour-3, 25%);
+  text-shadow: 0px 0px 25px black;
+}
+
+.a {
+  background-color: $pad-colour-4;
+  color: darken($pad-colour-4, 25%);
+  text-shadow: 0px 0px 25px black;
+}
+
+.s {
+  background-color: $pad-colour-5;
+  color: darken($pad-colour-5, 25%);
+  text-shadow: 0px 0px 25px black;
+}
+
+.d {
+  background-color: $pad-colour-6;
+  color: darken($pad-colour-6, 25%);
+  text-shadow: 0px 0px 25px black;
+}
+
+.z {
+  background-color: $pad-colour-7;
+  color: darken($pad-colour-7, 25%);
+  text-shadow: 0px 0px 25px black;
+}
+
+.x {
+  background-color: $pad-colour-8;
+  color: darken($pad-colour-8, 25%);
+  text-shadow: 0px 0px 25px black;
+}
+
+.c {
+  background-color: $pad-colour-9;
+  color: darken($pad-colour-9, 25%);
+  text-shadow: 0px 0px 25px black;
+}
+
+.drum-pad:hover {
+  cursor: pointer;
+  filter: brightness(150%);
+}
+.q.pressed {
+  filter: brightness(150%);
+  box-shadow: 0px 0px 30px 0px $pad-colour-1;
+  color: lighten($pad-colour-1, 5%);
+}
+
+.w.pressed {
+  filter: brightness(150%);
+  box-shadow: 0px 0px 30px 0px $pad-colour-2;
+  color: lighten($pad-colour-2, 5%);
+}
+
+.e.pressed {
+  filter: brightness(150%);
+  box-shadow: 0px 0px 30px 0px $pad-colour-3;
+  color: lighten($pad-colour-3, 5%);
+}
+
+.a.pressed {
+  filter: brightness(150%);
+  box-shadow: 0px 0px 30px 0px $pad-colour-4;
+  color: lighten($pad-colour-4, 5%);
+}
+
+.s.pressed {
+  filter: brightness(150%);
+  box-shadow: 0px 0px 30px 0px $pad-colour-5;
+  color: lighten($pad-colour-5, 5%);
+}
+
+.d.pressed {
+  filter: brightness(150%);
+  box-shadow: 0px 0px 30px 0px $pad-colour-6;
+  color: lighten($pad-colour-6, 5%);
+}
+
+.z.pressed {
+  filter: brightness(150%);
+  box-shadow: 0px 0px 30px 0px $pad-colour-7;
+  color: lighten($pad-colour-7, 5%);
+}
+
+.x.pressed {
+  filter: brightness(150%);
+  box-shadow: 0px 0px 30px 0px $pad-colour-8;
+  color: lighten($pad-colour-8, 5%);
+}
+
+.c.pressed {
+  filter: brightness(150%);
+  box-shadow: 0px 0px 30px 0px $pad-colour-9;
+  color: lighten($pad-colour-9, 5%);
+}
+#display {
+  width: 10rem;
+  height: 5rem;
+  border-radius: 0.3rem;
+  font-size: 1.3rem;
+  font-weight: bold;
+  background-color: rgb(51, 51, 51);
+  border: 3px solid rgb(39, 39, 39);
+  color: rgb(0, 197, 0);
+  text-shadow: 0px 0px 20px rgb(0, 152, 0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @media (max-height: 565px ) {
+    width: 7.5rem;
+    height: 3.75rem;
+    gap: 0.7rem;
+    font-size: 0.95rem;
+  }
+  @media (max-width: 545px ) {
+    width: 7.5rem;
+    height: 3.75rem;
+    gap: 0.7rem;
+    font-size: 0.95rem;
+  }
+}
+
+#misc {
+  color: #d3d3d3;
+  font-size: 0.7rem;
+  text-align: center;
+}
+
+a {
+  color: #d3d3d3;
+}
